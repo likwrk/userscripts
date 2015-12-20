@@ -4,7 +4,7 @@
 // description     Create direct urls to video instead of web player
 // @include        http://seasonvar.ru/
 // @match          http://seasonvar.ru/*
-// @version        0.0.2
+// @version        0.0.3
 // updateURL       https://raw.githubusercontent.com/likwrk/userscripts/master/seasonvar.meta.js
 // @updateURL      https://raw.githubusercontent.com/likwrk/userscripts/master/seasonvar.meta.js
 // @downloadURL    https://raw.githubusercontent.com/likwrk/userscripts/master/seasonvar.user.js
@@ -52,21 +52,18 @@ function Interceptor(nativeOpenWrapper, nativeSendWrapper) {
     };
 
     XMLHttpRequest.prototype.open = function () {
-       var xhr = this;
-       if (arguments[1].indexOf('list.xml') !== -1) {
-           this.onload = function() {
-               var playlist = JSON.parse(xhr.response);
-               console.log('playlist', playlist);
-               console.log('playlistLoaded');
-               playlistLoaded(playlist);
-           }
-       }
+        var xhr = this;
+        if (arguments[1].indexOf('list.xml') !== -1) {
+            this.onload = function() {
+                playlistLoaded(JSON.parse(xhr.response));
+            };
+        }
        return nativeOpenWrapper.apply(this, arguments);
-    }
+    };
 
     XMLHttpRequest.prototype.send = function () {
         return nativeSendWrapper.apply(this, arguments);
-    }
+    };
 }
 
 
@@ -77,7 +74,7 @@ document.onreadystatechange = function () {
         var click = new Event('click');
         if (html5) html5.dispatchEvent(click);
     }
-}
+};
 
 var script = document.createElement("script");
 script.type = "text/javascript";
