@@ -1,0 +1,212 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+
+/* COMPUTERRA */
+@-moz-document domain("computerra.ru") {
+    .article-text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+
+
+/* ORACLE DOCS */
+@-moz-document url-prefix("http://docs.oracle.com/") {
+    body, p {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1f1f1f;
+        background-color: #f1ede7;
+        font-weight: 200;
+        margin-bottom: 10px;
+    }
+    body.a0v0, div.a0v0, div.a0v4, div.IND, .MainFlow_indented {
+        margin: 0px auto;
+        width: 960px;
+        padding: 0px;
+    }
+}
+
+@-moz-document domain("docs.oracle.com") {
+    #PageContent {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 960px;
+    }
+    .codeblock {
+        font-family: Monaco;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+}
+
+
+/* EVERNOTE */
+@-moz-document domain("www.evernote.com") {
+    .GAOIOH2DBQB .GAOIOH2DJS {
+        width: 100%;
+    }
+}
+
+
+/* FUNTOO */
+@-moz-document domain("funtoo.org") {
+    #content-container {
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 22px;
+    }
+    element {
+        font-family: Open Sans;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+
+/* HACKERS NEWS */
+@-moz-document url-prefix("https://news.ycombinator.com/") {
+    .title a {
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .subtext a:last-child {
+        color: blue;
+        font-size: 16px;
+    }
+    .subtext span {
+        font-size: 14px;
+        color: #000000;
+    }
+    * {
+       font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    .comment, .default p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 27px;
+        color: #404040;
+    }
+    td.default {
+       max-width: 800px;
+    }
+    form {
+       display: none;
+    }
+    .title span.comhead {
+       color: #E44D26;
+    }
+}
+
+
+/* JIRA */
+@-moz-document domain("dzonedev.atlassian.net") {
+    .issue-list > li.focused a, .issue-list > li.focused {
+        background-color: #4A6785;
+        color: #fff;
+    }
+}
+
+@-moz-document domain("jira.smartum.pro") {
+    .issue-list > li.focused a, .issue-list > li.focused {
+        background-color: #4A6785;
+        color: #fff;
+    }
+}
+
+
+/* LIFERAY DOCS */
+@-moz-document domain("liferay.com") {
+    body, input, legend, select, textarea {
+        color: #4C4C4E;
+        font: 16px/1.3 Arial,Helvetica,sans-serif;
+    }
+    pre code {
+        font-size: 13px;
+    }
+}
+
+
+/* DUCKDUCKGO */
+@-moz-document domain("duckduckgo.com") {
+    .cw {
+        margin: 0 auto;
+    }
+    .result__menu, .sponsored__info, .result__url__full {
+        opacity: 100;
+        visibility: visible;
+    }
+}
+
+
+/* PINTEREST */
+@-moz-document domain("pinterest.com") {
+    .UnauthBanner { display: none; }
+}
+
+
+/* QUORA */
+@-moz-document domain("quora.com") {
+    .grid_page_center_col {
+      width: 725px;
+    }
+    .Answer .ExpandedAnswer, .RelatedAnswerItem .ExpandedAnswer, .feed_item_answer_content .ExpandedAnswer, .Answer .expanded_q_text, .RelatedAnswerItem .expanded_q_text, .feed_item_answer_content .expanded_q_text, .Answer .truncated_q_text, .RelatedAnswerItem .truncated_q_text, .feed_item_answer_content .truncated_q_text, .Answer .inline_editor_value, .RelatedAnswerItem .inline_editor_value, .feed_item_answer_content .inline_editor_value, .Answer .suggested_edits_text, .RelatedAnswerItem .suggested_edits_text, .feed_item_answer_content .suggested_edits_text, .Answer .suggested .qtext_editor_content, .RelatedAnswerItem .suggested .qtext_editor_content, .feed_item_answer_content .suggested .qtext_editor_content {
+        font-family: Georgia,Times,"Times New Roman",serif;
+        font-size: 18px;
+        line-height: 1.4;
+   }
+}
+
+
+/* GOOGLE ADS REMOVE */
+@-moz-document domain("google.com") {
+   #taw { display: none; }
+}
+
+
+/* STACKOVERFLOW */
+@-moz-document domain("stackoverflow.com") {
+    #content {    width: 1180px;  }
+    #mainbar, .mainbar {    width: 935px;  }
+    .question {    width: 928px;  }
+    #question>table { width: 925px; }
+    .post-text {    width: 860px; font-size: 16px;  }
+    .comments {width: 860px;}
+    .comment-body { font-size: 16px; }
+}
+
+
+/* SYMFONY DOCS */
+@-moz-document url-prefix("http://symfony.com/doc/") {
+  .container {
+     max-width: none;
+  }
+  p {
+     font-size: 16px;
+  }
+}
+
+
+/* WIKIPEDIA */
+@-moz-document domain("wikipedia.org") {
+    div#content {
+        background-color: #f1ede7;
+    }
+    #bodyContent, .mw-body-content {
+        max-width: 960px;
+        margin: auto;
+    }
+    div#content p {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      color: #1f1f1f;
+      background-color: #f1ede7;
+      font-weight: 200;
+      margin-bottom: 10px;
+    }
+}
